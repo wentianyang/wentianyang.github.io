@@ -95,10 +95,10 @@
 开始编写代码
 
 导入JDBC驱动程序
-static final String JDBC_DRIVER = &amp;quot;com.mysql.jdbc.Driver&amp;quot;;
+static final String JDBC_DRIVER = “com.mysql.jdbc.Driver”;
 
 数据库地址
-static final String DB_URL = &amp;quot;jdbc:mysql://localhost/example?">
+static final String DB_URL = “jdbc:mysql://localhost/example?useSSL=true&amp;amp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JDBC连接MySql数据库">
 <meta property="og:url" content="http://yuigakki.com/2017/02/24/JDBC连接MySql数据库/index.html">
@@ -111,11 +111,11 @@ static final String DB_URL = &amp;quot;jdbc:mysql://localhost/example?">
 开始编写代码
 
 导入JDBC驱动程序
-static final String JDBC_DRIVER = &amp;quot;com.mysql.jdbc.Driver&amp;quot;;
+static final String JDBC_DRIVER = “com.mysql.jdbc.Driver”;
 
 数据库地址
-static final String DB_URL = &amp;quot;jdbc:mysql://localhost/example?">
-<meta property="og:updated_time" content="2017-02-24T09:23:50.413Z">
+static final String DB_URL = “jdbc:mysql://localhost/example?useSSL=true&amp;amp">
+<meta property="og:updated_time" content="2017-04-06T05:53:12.033Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JDBC连接MySql数据库">
 <meta name="twitter:description" content="使用JDBC连接Mysql数据库
@@ -126,10 +126,10 @@ static final String DB_URL = &amp;quot;jdbc:mysql://localhost/example?">
 开始编写代码
 
 导入JDBC驱动程序
-static final String JDBC_DRIVER = &amp;quot;com.mysql.jdbc.Driver&amp;quot;;
+static final String JDBC_DRIVER = “com.mysql.jdbc.Driver”;
 
 数据库地址
-static final String DB_URL = &amp;quot;jdbc:mysql://localhost/example?">
+static final String DB_URL = “jdbc:mysql://localhost/example?useSSL=true&amp;amp">
 
 
 
@@ -383,15 +383,14 @@ static final String DB_URL = &amp;quot;jdbc:mysql://localhost/example?">
 <p>开始编写代码</p>
 <ol>
 <li><p>导入JDBC驱动程序</p>
-<pre><code>static final String JDBC_DRIVER = &quot;com.mysql.jdbc.Driver&quot;;
-</code></pre></li>
+<p>static final String JDBC_DRIVER = “com.mysql.jdbc.Driver”;</p>
+</li>
 <li><p>数据库地址</p>
-<pre><code>static final String DB_URL = &quot;jdbc:mysql://localhost/example?useSSL=true&amp;serverTimezone=GMT&quot;;
-</code></pre></li>
+<p>static final String DB_URL = “jdbc:mysql://localhost/example?useSSL=true&amp;serverTimezone=GMT”;</p>
+</li>
 <li><p>Mysql用户名和密码</p>
-<pre><code>static final String USER_NAME = &quot;root&quot;;
-static final String USER_PASSWORD = &quot;123456&quot;;
-</code></pre></li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">static final String USER_NAME = &quot;root&quot;;</div><div class="line">static final String USER_PASSWORD = &quot;123456&quot;;</div></pre></td></tr></table></figure>
+</li>
 <li><p>注册JDBC驱动程序两种办法</p>
 <pre><code>Class.forName(JDBC_DRIVER);
 或者
@@ -522,7 +521,7 @@ conn = DriverManager.getConnection(DB_URL, USER_NAME, USER_PASSWORD);
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
