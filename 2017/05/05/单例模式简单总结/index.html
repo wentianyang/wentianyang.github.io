@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="大四最后一年," />
+  <meta name="keywords" content="设计模式," />
 
 
 
@@ -87,19 +87,46 @@
 
 
 
-<meta name="description" content="新年开篇简单总结今年，大四了，即将毕业，有时候会感叹青春不再也常常对找不到实习感到绝望，2016是我成长得较快的一年，不只是技术方面得到了飞一般的超越（相对于之前的我），心智上也更明白自己想要什么，本来打算在一月一号时候重建新的博客，但还是拖延了，可谓是本性难改。删掉了以前的博客，希望能有个新的开始，然后能坚持用博客记录自己的成长。现在也趁此机会给自己订下以下目标。
-今年展望找到一份不错的工作，然">
+<meta name="description" content="单例模式特点
+单例类在程序中只有一个实例，并且可以在全局可以访问。
+
+单例类要自己创建实例。
+
+单例模式只应在有真正“单一需求”时才可使用。
+
+对于过于频繁创建的类，单例模式在这方面减轻了内存的开销。
+单例模式常见方式
+饿汉式
+1234567891011public class SingleItem&amp;#123;	private static SingleItem INSTANCE = new Si">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2017新的开始">
-<meta property="og:url" content="http://yuigakki.com/2017/01/06/2017新的开始/index.html">
+<meta property="og:title" content="单例模式简单总结">
+<meta property="og:url" content="http://yuigakki.com/2017/05/05/单例模式简单总结/index.html">
 <meta property="og:site_name" content="文天杨的博客">
-<meta property="og:description" content="新年开篇简单总结今年，大四了，即将毕业，有时候会感叹青春不再也常常对找不到实习感到绝望，2016是我成长得较快的一年，不只是技术方面得到了飞一般的超越（相对于之前的我），心智上也更明白自己想要什么，本来打算在一月一号时候重建新的博客，但还是拖延了，可谓是本性难改。删掉了以前的博客，希望能有个新的开始，然后能坚持用博客记录自己的成长。现在也趁此机会给自己订下以下目标。
-今年展望找到一份不错的工作，然">
-<meta property="og:updated_time" content="2017-02-10T15:57:35.679Z">
+<meta property="og:description" content="单例模式特点
+单例类在程序中只有一个实例，并且可以在全局可以访问。
+
+单例类要自己创建实例。
+
+单例模式只应在有真正“单一需求”时才可使用。
+
+对于过于频繁创建的类，单例模式在这方面减轻了内存的开销。
+单例模式常见方式
+饿汉式
+1234567891011public class SingleItem&amp;#123;	private static SingleItem INSTANCE = new Si">
+<meta property="og:updated_time" content="2017-05-05T13:28:58.284Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2017新的开始">
-<meta name="twitter:description" content="新年开篇简单总结今年，大四了，即将毕业，有时候会感叹青春不再也常常对找不到实习感到绝望，2016是我成长得较快的一年，不只是技术方面得到了飞一般的超越（相对于之前的我），心智上也更明白自己想要什么，本来打算在一月一号时候重建新的博客，但还是拖延了，可谓是本性难改。删掉了以前的博客，希望能有个新的开始，然后能坚持用博客记录自己的成长。现在也趁此机会给自己订下以下目标。
-今年展望找到一份不错的工作，然">
+<meta name="twitter:title" content="单例模式简单总结">
+<meta name="twitter:description" content="单例模式特点
+单例类在程序中只有一个实例，并且可以在全局可以访问。
+
+单例类要自己创建实例。
+
+单例模式只应在有真正“单一需求”时才可使用。
+
+对于过于频繁创建的类，单例模式在这方面减轻了内存的开销。
+单例模式常见方式
+饿汉式
+1234567891011public class SingleItem&amp;#123;	private static SingleItem INSTANCE = new Si">
 
 
 
@@ -127,13 +154,13 @@
 
 
 
-  <link rel="canonical" href="http://yuigakki.com/2017/01/06/2017新的开始/"/>
+  <link rel="canonical" href="http://yuigakki.com/2017/05/05/单例模式简单总结/"/>
 
 
 
 
 
-  <title> 2017新的开始 | 文天杨的博客 </title>
+  <title> 单例模式简单总结 | 文天杨的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -260,7 +287,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yuigakki.com/2017/01/06/2017新的开始/">
+  <link itemprop="mainEntityOfPage" href="http://yuigakki.com/2017/05/05/单例模式简单总结/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="文天杨">
@@ -284,7 +311,7 @@
             
             
               
-                2017新的开始
+                单例模式简单总结
               
             
           </h1>
@@ -299,8 +326,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-06T02:04:40+08:00">
-                2017-01-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-05T20:48:30+08:00">
+                2017-05-05
               </time>
             
 
@@ -318,8 +345,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/01/06/2017新的开始/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/06/2017新的开始/" itemprop="commentCount"></span>
+                <a href="/2017/05/05/单例模式简单总结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/05/单例模式简单总结/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -345,16 +372,31 @@
       
 
       
-        <h2 id="新年开篇"><a href="#新年开篇" class="headerlink" title="新年开篇"></a>新年开篇</h2><h3 id="简单总结"><a href="#简单总结" class="headerlink" title="简单总结"></a>简单总结</h3><p>今年，大四了，即将毕业，有时候会感叹青春不再也常常对找不到实习感到绝望，2016是我成长得较快的一年，不只是技术方面得到了飞一般的超越（相对于之前的我），心智上也更明白自己想要什么，本来打算在一月一号时候重建新的博客，但还是拖延了，可谓是本性难改。删掉了以前的博客，希望能有个新的开始，然后能坚持用博客记录自己的成长。现在也趁此机会给自己订下以下目标。</p>
-<h3 id="今年展望"><a href="#今年展望" class="headerlink" title="今年展望"></a>今年展望</h3><p>找到一份不错的工作，然后实现一下的内容，首先是书单</p>
-<ul>
-<li>Android艺术开发探索</li>
-<li>加强算法</li>
-<li>Java编程思想<br><strong>其他扩展学习</strong></li>
-<li>Python：能够达到一般水平</li>
-<li>玩一下小程序</li>
-<li>获得纳米学位</li>
+        <h3 id="单例模式特点"><a href="#单例模式特点" class="headerlink" title="单例模式特点"></a>单例模式特点</h3><ol>
+<li><p>单例类在程序中只有一个实例，并且可以在全局可以访问。</p>
+</li>
+<li><p>单例类要自己创建实例。</p>
+</li>
+<li><p>单例模式只应在有真正“单一需求”时才可使用。</p>
+</li>
+<li><p>对于过于频繁创建的类，单例模式在这方面减轻了内存的开销。</p>
+<h3 id="单例模式常见方式"><a href="#单例模式常见方式" class="headerlink" title="单例模式常见方式"></a>单例模式常见方式</h3><ul>
+<li><p>饿汉式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">public class SingleItem&#123;</div><div class="line">	private static SingleItem INSTANCE = new SingleItem();</div><div class="line">	</div><div class="line">	private SingleItem()&#123;</div><div class="line">      </div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	public static SingleItem getInstance()&#123;</div><div class="line">      return INSTANCE;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>饿汉式的优点是在类加载的时候就实例化了，避免了线程同步的问题；缺点是由于在类加载时就实例化了，但是我们有时候并没有用到这个实例，所以会造成内存浪费。</p>
+</li>
+<li><p>懒汉式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">public class SingleItem&#123;</div><div class="line">  private static SingleItem INSTANCE = null;</div><div class="line">  </div><div class="line">  private SingleItem()&#123;</div><div class="line">    </div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  public static SingleItem getInstance()&#123;</div><div class="line">    if(INSTANCE == null)&#123;</div><div class="line">      INSTANCE = new SingleItem();</div><div class="line">    &#125;</div><div class="line">    return INSTANCE;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>懒汉式的优点是在需要的时候才去加载；缺点是会出现线程不安全的情况。</p>
+</li>
+<li><p>加锁方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">public class SingleItem&#123;</div><div class="line">  private static SingleItem INSTANCE = null;</div><div class="line">  </div><div class="line">  private SingleItem()&#123;</div><div class="line">    </div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  public static synchronized SingleItem getInstance()&#123;</div><div class="line">    if(INSTANCE == null)&#123;</div><div class="line">      INSTACNE = new SingleItem();</div><div class="line">    &#125;</div><div class="line">    return INSTANCE;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>加锁方式的优点是解决了线性同步的问题；缺点是每次调用都要判断同步锁，效率低。</p>
+</li>
 </ul>
+<p>​</p>
+</li>
+</ol>
 
       
     </div>
@@ -378,7 +420,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/大四最后一年/" rel="tag"># 大四最后一年</a>
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
           
         </div>
       
@@ -391,15 +433,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/04/06/使用Youtube客户端播放视频/" rel="next" title="使用Youtube客户端播放视频">
+                <i class="fa fa-chevron-left"></i> 使用Youtube客户端播放视频
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/01/09/我的封装之路/" rel="prev" title="我的封装之路(一)">
-                我的封装之路(一) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -425,8 +467,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/01/06/2017新的开始/"
-           data-title="2017新的开始" data-url="http://yuigakki.com/2017/01/06/2017新的开始/">
+      <div class="ds-thread" data-thread-key="2017/05/05/单例模式简单总结/"
+           data-title="单例模式简单总结" data-url="http://yuigakki.com/2017/05/05/单例模式简单总结/">
       </div>
     
   </div>
@@ -539,7 +581,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#新年开篇"><span class="nav-number">1.</span> <span class="nav-text">新年开篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#简单总结"><span class="nav-number">1.1.</span> <span class="nav-text">简单总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#今年展望"><span class="nav-number">1.2.</span> <span class="nav-text">今年展望</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式特点"><span class="nav-number">1.</span> <span class="nav-text">单例模式特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式常见方式"><span class="nav-number">2.</span> <span class="nav-text">单例模式常见方式</span></a></li></ol></div>
             
 
           </div>
