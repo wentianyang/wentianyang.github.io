@@ -1,6 +1,8 @@
 ## 杨天文    
 **西安文理学院，本科｜软件工程 17届毕业生**
+
 **<yqqq2015@gmail.com>｜15596650191**
+
 **[GitHub](https://github.com/wentianyang)｜[个人博客](http://yuigakki.com/)**
 **期望职位： Android应用开发工程师**
 
