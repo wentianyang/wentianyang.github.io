@@ -4,6 +4,7 @@
 **<yqqq2015@gmail.com>｜15596650191**
 
 **[GitHub](https://github.com/wentianyang)｜[个人博客](http://yuigakki.com/)**
+
 **期望职位： Android应用开发工程师**
 
 ## 开发技能 
